@@ -1,0 +1,173 @@
+{
+  "bron": "https://www.parlement.com/id/vk1wljxti6u9/tweede_kamerverkiezingen_2017",
+  "partijen": [
+    {
+      "naam": "VVD",
+      "lijst": 1,
+      "lijsttrekker": "Mark Rutte",
+      "zittend": true
+    },
+    {
+      "naam": "PVDA",
+      "lijst": 2,
+      "lijsttrekker": "Lodewijk Asscher",
+      "zittend": true
+    },
+    {
+      "naam": "PVV",
+      "lijst": 3,
+      "lijsttrekker": "Geert Wilders",
+      "zittend": true
+    },
+    {
+      "naam": "SP",
+      "lijst": 4,
+      "lijsttrekker": "Emile Roemer",
+      "zittend": true
+    },
+    {
+      "naam": "CDA",
+      "lijst": 5,
+      "lijsttrekker": "Sybrand van Haersma Buma",
+      "zittend": true
+    },
+    {
+      "naam": "D66",
+      "lijst": 6,
+      "lijsttrekker": "Alexander Pechtold",
+      "zittend": true
+    },
+    {
+      "naam": "ChristenUnie",
+      "lijst": 7,
+      "lijsttrekker": "Gert-Jan Segers",
+      "zittend": true
+    },
+    {
+      "naam": "Groenlinks",
+      "lijst": 8,
+      "lijsttrekker": "Jesse Klaver",
+      "zittend": true
+    },
+    {
+      "naam": "SGP",
+      "lijst": 9,
+      "lijsttrekker": "Kees van der Staaij",
+      "zittend": true
+    },
+    {
+      "naam": "Partij voor de Dieren",
+      "lijst": 10,
+      "lijsttrekker": "Marianne Thieme",
+      "zittend": true
+    },
+    {
+      "naam": "50PLUS",
+      "lijst": 11,
+      "lijsttrekker": "Henk Krol",
+      "zittend": true
+    },
+    {
+      "naam": "Ondernemerspartij",
+      "lijst": 12,
+      "lijsttrekker": "Hero Brinkman",
+      "zittend": false
+    },
+    {
+      "naam": "VoorNederland",
+      "lijst": 13,
+      "lijsttrekker": "Jan Roos",
+      "zittend": false
+    },
+    {
+      "naam": "DENK",
+      "lijst": 14,
+      "lijsttrekker": "Tunahan Kuzu",
+      "zittend": false
+    },
+    {
+      "naam": "NIEUWE WEGEN",
+      "lijst": 15,
+      "lijsttrekker": "Alfred Oosenburg",
+      "zittend": false
+    },
+    {
+      "naam": "Forum voor Democratie",
+      "lijst": 16,
+      "lijsttrekker": "Thierry Baudet",
+      "zittend": false
+    },
+    {
+      "naam": "De Burger Beweging",
+      "lijst": 17,
+      "lijsttrekker": "Ad Flems",
+      "zittend": false
+    },
+    {
+      "naam": "Vrijzinnige Partij",
+      "lijst": 18,
+      "lijsttrekker": "Norbert Klein",
+      "zittend": false
+    },
+    {
+      "naam": "GeenPeil",
+      "lijst": 19,
+      "lijsttrekker": "Jan Dijkgraaf",
+      "zittend": false
+    },
+    {
+      "naam": "Piratenpartij",
+      "lijst": 20,
+      "lijsttrekker": "Ancilla van de Leest",
+      "zittend": false
+    },
+    {
+      "naam": "Artikel 1",
+      "lijst": 21,
+      "lijsttrekker": "Sylvana Simons",
+      "zittend": false
+    },
+    {
+      "naam": "Niet Stemmers",
+      "lijst": 22,
+      "lijsttrekker": "Peter Plasman",
+      "zittend": false
+    },
+    {
+      "naam": "Libertarische Partij",
+      "lijst": 23,
+      "lijsttrekker": "Robert Valentine",
+      "zittend": false
+    },
+    {
+      "naam": "Lokaal in de Kamer",
+      "lijst": 24,
+      "lijsttrekker": "Jan Heijman",
+      "zittend": false
+    },
+    {
+      "naam": "JEZEUS LEEFT",
+      "lijst": 25,
+      "lijsttrekker": "Joop van Ooijen",
+      "zittend": false
+    },
+    {
+      "naam": "StemNL",
+      "lijst": 26,
+      "lijsttrekker": "Mario van den Eijnde",
+      "zittend": false
+    },
+    {
+      "naam": "MenS en Spirit/Basisinkomen Partij/V-R",
+      "lijst": 27,
+      "lijsttrekker": "Tara-Joëlle Fonk",
+      "zittend": false
+    },
+    {
+      "naam": "Vrije Democratische Partij",
+      "lijst": 28,
+      "lijsttrekker": "Buhran Gökalp",
+      "zittend": false
+    },
+  ]
+}
