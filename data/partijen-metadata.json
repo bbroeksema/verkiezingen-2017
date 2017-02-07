@@ -5,109 +5,180 @@
       "naam": "VVD",
       "lijst": 1,
       "lijsttrekker": "Mark Rutte",
-      "zittend": true
+      "zittend": true,
+      "verkiezingsprogramma": {
+        "bron": "https://vvd.nl/content/uploads/2016/11/vvd_verkiezingsprogramma_pages.pdf",
+        "pdf": "lijst-1-programma.pdf"
+      }
     },
     {
       "naam": "PVDA",
       "lijst": 2,
       "lijsttrekker": "Lodewijk Asscher",
-      "zittend": true
+      "zittend": true,
+      "verkiezingsprogramma": {
+        "bron": "https://www.pvda.nl/wp-content/uploads/2017/01/PvdA-Verkiezingsprogramma-2017.pdf",
+        "pdf": "lijst-2-programma.pdf"
+      }
     },
     {
       "naam": "PVV",
       "lijst": 3,
       "lijsttrekker": "Geert Wilders",
-      "zittend": true
+      "zittend": true,
+      "verkiezingsprogramma": {
+        "bron": "https://www.pvv.nl/images/Conceptverkiezingsprogrammma.pdf",
+        "pdf": "lijst-3-programma.pdf"
+      }
     },
     {
       "naam": "SP",
       "lijst": 4,
       "lijsttrekker": "Emile Roemer",
-      "zittend": true
+      "zittend": true,
+      "verkiezingsprogramma": {
+        "bron": "",
+        "pdf": "lijst-4-programma.pdf"
+      }
     },
     {
       "naam": "CDA",
       "lijst": 5,
       "lijsttrekker": "Sybrand van Haersma Buma",
-      "zittend": true
+      "zittend": true,
+      "verkiezingsprogramma": {
+        "bron": "https://d2vry01uvf8h31.cloudfront.net/CDA/Documenten/2017/TK2017/Verkiezingsprogramma/CDAverkiezingsprogramma%5B2017-2021%5D.pdf",
+        "pdf": "lijst-5-programma.pdf"
+      }
     },
     {
       "naam": "D66",
       "lijst": 6,
       "lijsttrekker": "Alexander Pechtold",
-      "zittend": true
+      "zittend": true,
+      "verkiezingsprogramma": {
+        "bron": "https://verkiezingsprogramma.d66.nl/"
+      }
     },
     {
       "naam": "ChristenUnie",
       "lijst": 7,
       "lijsttrekker": "Gert-Jan Segers",
-      "zittend": true
+      "zittend": true,
+      "verkiezingsprogramma": {
+        "bron": "https://www.christenunie.nl/l/library/download/1047759",
+        "pdf": "lijst-7-programma.pdf"
+      }
     },
     {
       "naam": "Groenlinks",
       "lijst": 8,
       "lijsttrekker": "Jesse Klaver",
-      "zittend": true
+      "zittend": true,
+      "verkiezingsprogramma": {
+        "bron": "https://groenlinks.nl/sites/groenlinks.nl/files/Verkiezingsprogramma-GroenLinks-2017-2021.pdf",
+        "pdf": "lijst-8-programma.pdf"
+      }
     },
     {
       "naam": "SGP",
       "lijst": 9,
       "lijsttrekker": "Kees van der Staaij",
-      "zittend": true
+      "zittend": true,
+      "verkiezingsprogramma": {
+        "bron": "https://www.sgp.nl/download.php?docID=690",
+        "pdf": "lijst-9-programma.pdf"
+      }
     },
     {
       "naam": "Partij voor de Dieren",
       "lijst": 10,
       "lijsttrekker": "Marianne Thieme",
-      "zittend": true
+      "zittend": true,
+      "verkiezingsprogramma": {
+        "bron": "https://www.partijvoordedieren.nl/data/files/2016/12/PvdDVerkiezingsprogramaTweedeKamerverkiezingen2017_def-0cd09fe5.pdf",
+        "pdf": "lijst-10-programma.pdf"
+      }
     },
     {
       "naam": "50PLUS",
       "lijst": 11,
       "lijsttrekker": "Henk Krol",
-      "zittend": true
+      "zittend": true,
+      "verkiezingsprogramma": {
+        "bron": "https://50pluspartij.nl/images/PDFs/50PLUS_verkiezingsprogramma_2017-2021_DEFINITIEF.pdf",
+        "pdf": "lijst-11-programma.pdf"
+      }
     },
     {
       "naam": "Ondernemerspartij",
       "lijst": 12,
       "lijsttrekker": "Hero Brinkman",
-      "zittend": false
+      "zittend": false,
+      "verkiezingsprogramma": {
+        "bron": "http://www.ondernemerspartij.nl/wp-content/uploads/2016/11/OP-programma-2017-2021.pdf",
+        "pdf": "lijst-12-programma.pdf"
+      }
     },
     {
       "naam": "VoorNederland",
       "lijst": 13,
       "lijsttrekker": "Jan Roos",
-      "zittend": false
+      "zittend": false,
+      "verkiezingsprogramma": {
+        "bron": "http://vnl.nu/wp-content/uploads/2014/01/VNL-Verkiezingsprogramma-2017-2021.pdf",
+        "pdf": "lijst-13-programma.pdf"
+      }
     },
     {
       "naam": "DENK",
       "lijst": 14,
       "lijsttrekker": "Tunahan Kuzu",
-      "zittend": false
+      "zittend": false,
+      "verkiezingsprogramma": {
+        "bron": "https://www.bewegingdenk.nl/wp-content/uploads/2016/11/Verkiezingsprogramma_DENK_2017-2021.pdf",
+        "pdf": "lijst-14-programma.pdf"
+      }
     },
     {
       "naam": "NIEUWE WEGEN",
       "lijst": 15,
       "lijsttrekker": "Alfred Oosenburg",
-      "zittend": false
+      "zittend": false,
+      "verkiezingsprogramma": {
+        "bron": "https://www.nieuwewegen.nu/upload/2/130/Verkiezingsprogramma%20Nieuwe%20Wegen.pdf",
+        "pdf": "lijst-15-programma.pdf"
+      }
     },
     {
       "naam": "Forum voor Democratie",
       "lijst": 16,
       "lijsttrekker": "Thierry Baudet",
-      "zittend": false
+      "zittend": false,
+      "verkiezingsprogramma": {
+        "bron": "https://forumvoordemocratie.nl/Verkiezingsprogramma%202017.pdf",
+        "pdf": "lijst-16-programma.pdf"
+      }
     },
     {
       "naam": "De Burger Beweging",
       "lijst": 17,
       "lijsttrekker": "Ad Flems",
-      "zittend": false
+      "zittend": false,
+      "verkiezingsprogramma": {
+        "bron": "http://bewegingx.nl/.cm4all/iproc.php/Verkiezingen/Verkiezingsprogramma%202017%20DBB.pdf?cdp=a",
+        "pdf": "lijst-17-programma.pdf"
+      }
     },
     {
       "naam": "Vrijzinnige Partij",
       "lijst": 18,
       "lijsttrekker": "Norbert Klein",
-      "zittend": false
+      "zittend": false,
+      "verkiezingsprogramma": {
+        "bron": "http://assets.contentful.com/9yrjjg8esu0r/2y71fb0uxGyYkS6igY2c8y/b2b6071c1d17204c1269be72548b1be8/Definitief_Verkiezingsprogramma_2017_fix_the_basics__2_.pdf",
+        "pdf": "lijst-18-programma.pdf"
+      }
     },
     {
       "naam": "GeenPeil",
@@ -119,7 +190,11 @@
       "naam": "Piratenpartij",
       "lijst": 20,
       "lijsttrekker": "Ancilla van de Leest",
-      "zittend": false
+      "zittend": false,
+      "verkiezingsprogramma": {
+        "bron": "https://piratenpartij.nl/wp-content/uploads/2016/10/PPNL-Verkiezingsprogramma-2017.pdf",
+        "pdf": "lijst-20-programma.pdf"
+      }
     },
     {
       "naam": "Artikel 1",
@@ -137,19 +212,31 @@
       "naam": "Libertarische Partij",
       "lijst": 23,
       "lijsttrekker": "Robert Valentine",
-      "zittend": false
+      "zittend": false,
+      "verkiezingsprogramma": {
+        "bron": "http://pubnpp.eldoc.ub.rug.nl/FILES/root/verkiezingsprogramma/TK/libertapart2017/LibPartij2017.pdf",
+        "pdf": "lijst-20-programma.pdf"
+      }
     },
     {
       "naam": "Lokaal in de Kamer",
       "lijst": 24,
       "lijsttrekker": "Jan Heijman",
-      "zittend": false
+      "zittend": false,
+      "verkiezingsprogramma": {
+        "bron": "http://lokaalindekamer.nl/programma/",
+        "txt": "lijst-24-programma.pdf"
+      }
     },
     {
       "naam": "JEZEUS LEEFT",
       "lijst": 25,
       "lijsttrekker": "Joop van Ooijen",
-      "zittend": false
+      "zittend": false,
+      "verkiezingsprogramma": {
+        "bron": "http://www.jezusleeft.nl/programma/",
+        "pdf": "lijst-25-programma.pdf"
+      }
     },
     {
       "naam": "StemNL",
@@ -161,7 +248,11 @@
       "naam": "MenS en Spirit/Basisinkomen Partij/V-R",
       "lijst": 27,
       "lijsttrekker": "Tara-Joëlle Fonk",
-      "zittend": false
+      "zittend": false,
+      "verkiezingsprogramma": {
+        "bron": "http://basisinkomenpartij.nl/?page_id=6995",
+        "pdf": "lijst-27-programma.pdf"
+      }
     },
     {
       "naam": "Vrije Democratische Partij",
