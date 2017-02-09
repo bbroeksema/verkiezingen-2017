@@ -31,7 +31,7 @@ def clean_text(text):
     return text
 
 
-def pdf_to_df(data_dir='../data/'):
+def pdf_to_df(data_dir):
 
     files = glob.glob(os.path.join(data_dir, "*.pdf"))
 
