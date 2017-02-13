@@ -2,6 +2,16 @@ from flask import Flask
 from flask import request
 from flask import jsonify
 
+from sklearn.externals import joblib
+from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.naive_bayes import BernoulliNB, MultinomialNB
+from sklearn.pipeline import make_pipeline, Pipeline
+from nltk import word_tokenize
+
+app = Flask(__name__)
+g_model_filename='../models/party_classifier.pkl'
+g_estimator = joblib.load(g_model_filename)
+
 class InvalidUsage(Exception):
     status_code = 400
 
@@ -17,17 +27,20 @@ class InvalidUsage(Exception):
         rv['message'] = self.message
         return rv
 
-app = Flask(__name__)
-
 @app.route('/')
 def index():
     return 'Index Page'
 
 @app.route('/fit', methods=['POST'])
 def fit():
+    """
+    Accepts messages with a json post body that looks like:
+
+    { "text": "veiligheid immigratie islam terrorisme"}
+    """
     try:
         json_dict = request.get_json()
-        return json_dict['text']
+        return g_estimator.predict_proba(json_dict['text'])
     except ValueError:
         raise InvalidUsage('Fit request has invalid format')
 
