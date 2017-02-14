@@ -2,15 +2,18 @@ from flask import Flask
 from flask import request
 from flask import jsonify
 
-from sklearn.externals import joblib
-from sklearn.feature_extraction.text import CountVectorizer
-from sklearn.naive_bayes import BernoulliNB, MultinomialNB
-from sklearn.pipeline import make_pipeline, Pipeline
-from nltk import word_tokenize
+import dill
+import json
+import pandas
+import pickle
+import sys
+
+sys.path.append('../')
+from src.models import *
 
 app = Flask(__name__)
-g_model_filename='../models/party_classifier.pkl'
-g_estimator = joblib.load(g_model_filename)
+g_estimator = PartyClassifier()
+g_estimator = pickle.load(open( '../models/PartyClassifier.pkl', "rb" ))
 
 class InvalidUsage(Exception):
     status_code = 400
@@ -40,9 +43,11 @@ def fit():
     """
     try:
         json_dict = request.get_json()
-        return g_estimator.predict_proba(json_dict['text'])
     except ValueError:
         raise InvalidUsage('Fit request has invalid format')
+
+    probas = g_estimator.predict_proba([json_dict['text']]).tolist()[0]
+    return json.dumps(dict(zip(g_estimator.y_labels, probas)))
 
 @app.errorhandler(InvalidUsage)
 def handle_invalid_usage(error):
