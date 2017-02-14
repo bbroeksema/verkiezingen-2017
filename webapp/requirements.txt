@@ -4,4 +4,3 @@ dill
 numpy
 scipy
 nltk
-pandas

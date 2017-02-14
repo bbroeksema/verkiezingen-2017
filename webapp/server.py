@@ -4,7 +4,6 @@ from flask import jsonify
 
 import dill
 import json
-import pandas
 import pickle
 import sys
 
