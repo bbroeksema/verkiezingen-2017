@@ -11,8 +11,9 @@ from nltk import word_tokenize
 
 class PartyClassifier:
 
-    def __init__(self):
+    def __init__(self, y_labels=None):
 
+        self.y_labels = y_labels
         self.estimator = None
         self.stemmer = DutchStemmer()
 
