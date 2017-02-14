@@ -46,7 +46,7 @@ def fit():
         raise InvalidUsage('Fit request has invalid format')
 
     probas = g_estimator.predict_proba([json_dict['text']]).tolist()[0]
-    return json.dumps(dict(zip(g_estimator.y_labels, probas)))
+    return json.dumps(zip(g_estimator.y_labels, probas))
 
 @app.errorhandler(InvalidUsage)
 def handle_invalid_usage(error):
