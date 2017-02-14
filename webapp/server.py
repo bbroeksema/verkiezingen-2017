@@ -10,7 +10,7 @@ import sys
 sys.path.append('../')
 from src.models import *
 
-app = Flask(__name__)
+app = Flask(__name__, static_url_path='/static')
 g_estimator = PartyClassifier()
 g_estimator = pickle.load(open( '../models/PartyClassifier.pkl', "rb" ))
 
@@ -30,8 +30,8 @@ class InvalidUsage(Exception):
         return rv
 
 @app.route('/')
-def index():
-    return 'Index Page'
+def root():
+    return app.send_static_file('index.html')
 
 @app.route('/fit', methods=['POST'])
 def fit():
