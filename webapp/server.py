@@ -1,10 +1,12 @@
 from flask import Flask
 from flask import request
 from flask import jsonify
+from flask import send_from_directory
 
 import dill
 import json
 import pickle
+import os
 import sys
 
 sys.path.append('../')
@@ -28,6 +30,10 @@ class InvalidUsage(Exception):
         rv = dict(self.payload or ())
         rv['message'] = self.message
         return rv
+
+@app.route('/js/<path:path>')
+def send_js(path):
+    return send_from_directory(os.path.join('.', 'static', 'js'), path)
 
 @app.route('/')
 def root():
