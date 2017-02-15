@@ -2,6 +2,7 @@ var btn = document.getElementById('button_submit');
 var input = document.getElementById('input_query');
 
 function render(data) {
+    data = data.sort(function(a, b) { return b[1] - a[1]; })
     var radarData = { labels : data.map(function(d) { return d[0]; }),
         datasets : [
             {
