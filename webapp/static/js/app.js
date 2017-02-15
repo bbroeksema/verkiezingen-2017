@@ -6,6 +6,7 @@ function render(data) {
     var radarData = { labels : data.map(function(d) { return d[0]; }),
         datasets : [
             {
+                label: "Uw termen komen overeen met",
                 fillColor : "rgba(220,220,220,0.5)",
                 strokeColor : "rgba(220,220,220,1)",
                 data : data.map(function(d) { return d[1]; })
