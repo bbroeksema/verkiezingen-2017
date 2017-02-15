@@ -23,7 +23,8 @@ function renderPredicton(prediction) {
         })]);
 
     var y = d3.scaleBand()
-        .rangeRound([height, 0], .1)
+        .rangeRound([height, 0])
+        .padding(0.1)
         .domain(data.map(function (d) {
             return d[0];
         }));
