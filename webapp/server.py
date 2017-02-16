@@ -35,6 +35,10 @@ class InvalidUsage(Exception):
 def send_js(path):
     return send_from_directory(os.path.join('.', 'static', 'js'), path)
 
+@app.route('/favicon.<path:path>')
+def favicon(path):
+    return app.send_static_file('favicon.' + path)
+
 @app.route('/')
 def root():
     return app.send_static_file('index.html')
