@@ -1,8 +1,9 @@
 import numpy as np
 
-from sklearn.feature_extraction.text import CountVectorizer
-from sklearn.naive_bayes import MultinomialNB
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.linear_model import LogisticRegression
 from sklearn.pipeline import Pipeline
+from sklearn.decomposition import TruncatedSVD
 
 from nltk.corpus import stopwords
 from nltk.stem.snowball import DutchStemmer
@@ -15,23 +16,26 @@ class PartyClassifier:
 
         self.y_labels = y_labels
         self.estimator = None
-        self.stemmer = DutchStemmer()
+        self.stemmer = DutchStemmer()  # initialize stemmer
 
     def fit(self, X, y):
 
-        n_labels = len(np.unique(y))
-        equal_priors = 1. * np.ones(n_labels) / n_labels
+        estimator = Pipeline(steps=[
 
-        estimator = Pipeline(steps=[('vectorizer', CountVectorizer(encoding='utf-8', decode_error='strict',
-                                                                   strip_accents=None, lowercase=True,
-                                                                   preprocessor=None,
-                                                                   tokenizer=self.__tokenize,
-                                                                   stop_words=stopwords.words('dutch'),
-                                                                   ngram_range=(1, 2), analyzer='word', max_df=0.1,
-                                                                   min_df=2,
-                                                                   max_features=100000, vocabulary=None, binary=False,
-                                                                   dtype=np.int64)),
-                                    ('classifier', MultinomialNB(class_prior=equal_priors))])
+            ('vectorizer', TfidfVectorizer(input='content', encoding='utf-8',
+                                           decode_error='strict', strip_accents='unicode',
+                                           lowercase=True, preprocessor=None, tokenizer=self.__tokenize,
+                                           analyzer='word', stop_words=stopwords.words('dutch'),
+                                           ngram_range=(1, 3), max_df=0.5, min_df=1, max_features=None,
+                                           vocabulary=None, binary=False, dtype=np.int64,
+                                           norm='l2', use_idf=True, smooth_idf=True, sublinear_tf=False)),
+
+            ('topic_model', TruncatedSVD(n_components=100, algorithm='randomized',
+                                         n_iter=10, random_state=12, tol=0.0)),
+
+            ('classifier', LogisticRegression(multi_class='multinomial', class_weight='balanced', solver='lbfgs'))
+
+        ])
 
         self.estimator = estimator.fit(X, y)
 
