@@ -52,6 +52,7 @@ class PartyClassifier:
     def __tokenize(self, text):
         """Converts text to tokens."""
         tokens = word_tokenize(text, language='dutch')
+        tokens = filter(lambda x: len(x) > 1, tokens)
         stemmed = []
         for item in tokens:
             stemmed.append(self.stemmer.stem(item))
