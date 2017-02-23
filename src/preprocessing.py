@@ -12,13 +12,13 @@ def read_pdf(file_names, verbose=False):
         try:
             text = process(f)
         except TypeError:
-            print "Could not parse {:s}".format(f)
+            print("Could not parse {:s}".format(f))
             pass
 
         if text is not None:
             data[f] = text
             if verbose:
-                print "Successfully parsed program of party {:s}".format(f)
+                print("Successfully parsed program of party {:s}".format(f))
 
     return data
 
