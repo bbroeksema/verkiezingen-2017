@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Stemradar - 2017</title>
     <style>
-        input { width: 400px }
+        button { vertical-align: top; }
         canvas{
             width: 100% !important;
             max-width: 800px;
@@ -41,9 +41,8 @@
     </div>
 
     <div id="div_form">
-        <input id="input_query" type="text" value="veiligheid immigratie islam terrorisme" title="Typ hier onderwerpen die u belanrijk vindt" value="" maxlength="100" />
-        <br/><br/>
-        <button id="button_submit">Waar moet ik op stemmen?</button>
+        <textarea rows="9" cols="70" id="input_query" type="text" placeholder="Typ hier uw verhaal. Bijvoorbeeld: veiligheid immigratie islam terrorisme" title="Typ hier onderwerpen die u belanrijk vindt" value="" maxlength="600"></textarea>
+        <button id="button_submit">Welk partijprogramma<br/>komt het meest overeen?</button>
     </div>
 
     <canvas id="radarChart" width="600" height="400"></canvas>
