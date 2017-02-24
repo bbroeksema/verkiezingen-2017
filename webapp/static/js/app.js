@@ -1,5 +1,6 @@
 var btn = document.getElementById('button_submit');
 var input = document.getElementById('input_query');
+var radarChart;
 
 function render(data) {
     data = data.sort(function(a, b) { return b[1] - a[1]; })
@@ -14,7 +15,8 @@ function render(data) {
         ]
     }
     var ctx = document.getElementById("radarChart").getContext("2d");
-    var myRadarChart = new Chart(ctx, {
+    if (radarChart) radarChart.destroy()
+    radarChart = new Chart(ctx, {
         type: 'radar',
         data: radarData,
         options: {
