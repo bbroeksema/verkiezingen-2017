@@ -9,8 +9,8 @@ import pickle
 import os
 import sys
 
-sys.path.append('../')
-from src.models import *
+sys.path.append('../src')
+from models import *
 
 app = Flask(__name__, static_url_path='/static')
 g_estimator = PartyClassifier()
