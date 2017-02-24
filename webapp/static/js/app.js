@@ -30,7 +30,9 @@ function render(data) {
 }
 
 btn.addEventListener('click', function(event) {
-    var query = "{ \"text\": \"" + input.value + "\" }"
+    var text = input.value.replace(/(\r\n|\n|\r|\"|\&)/gm," ");
+    var query = "{ \"text\": \"" + text + "\" }"
+
 
     d3.request("/fit")
         .header("Content-Type", "application/json")
